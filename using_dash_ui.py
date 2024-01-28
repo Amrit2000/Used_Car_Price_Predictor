@@ -1,9 +1,9 @@
+# -*- coding: utf-8 -*-
 import dash
 from dash import html, dcc, Input, Output
 import pickle
 import pandas as pd
 import numpy as np
-# -*- coding: utf-8 -*-
 
 
 # Load the trained model and car data
