@@ -3,6 +3,8 @@ from dash import html, dcc, Input, Output
 import pickle
 import pandas as pd
 import numpy as np
+# -*- coding: utf-8 -*-
+
 
 # Load the trained model and car data
 model = pickle.load(open('LinearRegressionModel.pkl', 'rb'))
