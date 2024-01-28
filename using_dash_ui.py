@@ -95,7 +95,8 @@ def predict_price(n_clicks, selected_company, selected_model, selected_year, sel
     if n_clicks > 0:
         prediction = model.predict(pd.DataFrame(columns=['name', 'company', 'year', 'kms_driven', 'fuel_type'],
                                                   data=np.array([selected_model, selected_company, selected_year, kilometers, selected_fuel_type]).reshape(1, 5)))
-        return html.H4(f"Predicted Price: ₹{np.round(prediction[0], 2)}", style={'marginTop': '20px'})
+        return html.H4("Predicted Price: ₹" + str(np.round(prediction[0], 2)), style={'marginTop': '20px'})
+
     else:
         return ''
 
