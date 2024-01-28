@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-pip install dash
 import dash
 from dash import html, dcc, Input, Output
 import pickle
