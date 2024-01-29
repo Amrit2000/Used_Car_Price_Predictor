@@ -102,4 +102,5 @@ def predict_price(n_clicks, selected_company, selected_model, selected_year, sel
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=True, port=8050)  # Change the port number as needed
+
